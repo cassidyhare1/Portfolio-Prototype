@@ -1,0 +1,306 @@
+/*
+
+color palette:
+
+LIGHT CREAM #FBDDC1
+CREAM       #F3BD91
+LIGHT ROSE  #E78E97
+DARK ROSE   #B56A6F
+
+*/
+
+/* HEADER IMAGE styles go here*/
+
+.responsive{
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+header {
+  background-color: rgb(255, 248, 241) ;
+  margin:0;
+  padding:0;
+}
+/* END HEADER IMAGE */
+
+/* BODY STYLES*/
+
+body {
+  margin:0;
+  padding:0;
+}
+/* END BODY STYLES */
+
+
+/* NAVIGATION STYLES GO HERE */
+#navbar{
+  background-color: #B56A6F;
+  overflow:auto;
+
+  margin:0;
+  
+  
+  
+}
+li{
+  list-style-type: none;
+  
+}
+#navbar a {
+  float: left;
+  display: inline-block;
+  color:  rgb(255, 248, 241);
+  text-align: center;
+  padding: 14px 15px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: sans-serif;
+
+}
+#navbar a:hover{
+  background-color: #E78E97;
+  
+}
+/*END NAVIGATION/*
+
+/*main image*/
+
+
+img { 
+  max-width:100%; max-height:100%; margin:auto; 
+}
+section{
+  border-bottom-style: solid;
+  border-color: #B56A6F;
+  border-bottom-width: 25px;
+}
+
+
+/*image columns of porfolio images*/
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px ;
+  justify-content: center;
+  justify-items: center;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 30%;
+  max-width: 40%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  justify-content: center;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 70%;
+    max-width: 70%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+/*Footer styles go here*/
+
+
+ 
+ 
+/* The footer is fixed to the bottom of the page */
+ 
+footer{
+	position: fixed;
+  bottom: 0;
+  margin:0;
+  padding:0;
+  border-top-style: solid;
+   border-top-width: 25px;
+   border-top-color: #B56A6F;
+   
+}
+ 
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+ 
+ 
+.footer-distributed{
+	background-color: rgb(255, 248, 241);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+	margin-top: 80px;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+ 
+/* Footer left */
+ 
+.footer-distributed .footer-left{
+	width: 30%;
+}
+ 
+.footer-distributed h3{
+	color:  #B56A6F;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+ 
+
+ 
+/* Footer links */
+ 
+.footer-distributed .footer-links{
+	color: #B56A6F;
+	margin: 20px 0 12px;
+}
+ 
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+ 
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+/* Footer Center */
+ 
+.footer-distributed .footer-center{
+	width: 35%;
+}
+ 
+ 
+.footer-distributed .footer-center i{
+	background-color: rgb(255, 248, 241);
+	color: #B56A6F;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+ 
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #B56A6F;
+	vertical-align: middle;
+	margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+	color:  #33383b;
+	text-decoration: none;;
+}
+ 
+ 
+/* Footer Right */
+ 
+.footer-distributed .footer-right{
+	width: 30%;
+}
+ 
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #B56A6F;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+ 
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+ 
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	
+	border-radius: 2px;
+ 
+	font-size: 20px;
+	color: #B56A6F;
+	text-align: center;
+	line-height: 35px;
+ 
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Here is the code for Responsive Footer */
+
+ 
+ 
+@media (max-width: 880px) {
+ 
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+ 
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+ 
+}
